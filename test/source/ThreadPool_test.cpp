@@ -45,7 +45,7 @@ TEST(threadpool, manyworker)
   std::vector<std::future<int> > results;
 
   for (int i = 0; i < 2048; ++i) {
-    results.emplace_back(pool.enqueue([i] { return i*i; }));
+    results.emplace_back(pool.enqueue([i] { return i * i; }));
   }
 
   for (int i = 0; i < 2048; ++i) {
