@@ -39,7 +39,6 @@
 
 namespace progschj
 {
-
 class ThreadPool
 {
 public:
